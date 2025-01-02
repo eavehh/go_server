@@ -40,9 +40,8 @@ func timeHandler(w http.ResponseWriter, r *http.Request) {
 */
 
 func myFunc(w http.ResponseWriter, r *http.Request){
-    fmt.Fprintf(w, "hello, Im server")
-    fmt.Println("Im a client")
-}
+    fmt.Fprintf(w, "Im a server")
+
 
 
 func main() {
