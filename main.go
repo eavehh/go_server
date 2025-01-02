@@ -40,7 +40,9 @@ func timeHandler(w http.ResponseWriter, r *http.Request) {
 */
 
 func myFunc(w http.ResponseWriter, r *http.Request){
-    fmt.Fprintf(w, "Im a server")
+    fmt.Fprintf(w, "Im a server")       //отправляет текстовый ответ клиенту который делает запрос 
+    fmt.Println("Обслужено: ", r.Host)  //показывает значение хоста с которого был сделан запрос 
+}
 
 
 
